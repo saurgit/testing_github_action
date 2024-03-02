@@ -13,6 +13,6 @@ jobs:
       - name: Installing the dependencies
         run: npm i
       - name: building the project
-        run: npm run dev
+        run: npm run build
       - name: Setup finish
         run: echo "Operation Completed"
