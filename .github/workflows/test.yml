@@ -1,10 +1,10 @@
 ---
-name: My first Github action
+name: Github action
 on:
   - push
 jobs:
-  print-Hello-world:
+  build-app:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World"
-      - run: echo "Operation has completed"
+      - uses: actions/checkout@v2
+      - run: tree
