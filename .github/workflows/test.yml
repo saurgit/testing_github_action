@@ -1,8 +1,10 @@
-name:My first github action
-on:[push]
+---
+name: My first Github action
+on:
+  - push
 jobs:
   print-Hello-world:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      -run: echo "Hello World"
-      -run: echo "Operation has completed"
+      - run: echo "Hello World"
+      - run: echo "Operation has completed"
