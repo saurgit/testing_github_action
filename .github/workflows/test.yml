@@ -7,4 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: tree
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '17.10.0'
+      - name: building the project
+        run: npm run dev
+      - name: Setup finish
+        run: echo "Operation Completed"
